@@ -43,27 +43,33 @@
             <h2>Form</h2>
             <p class="destacado">Complete the form and we will contact you</p>
             <img id="imagen-principal" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HLGtY6O2vUHqIyEbWdmBgA.jpeg" alt="Netflix">
+            <!-- 
+              etiqueta formularios 
+              action -> ruta donde se enviaran los datos
+              method > forma de como se envian los datos GET / PSOT
+              enctype > subir archivos encrip
+            -->
             <form action="procesar_formulario.php" method="POST">
-              <label for="nombre">Name</label>
-              <input type="text" id="nombre" name="nombre" required><br><br>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required><br><br>
           
               <label for="email">Email</label>
               <input type="email" id="email" name="email" required><br><br>
           
-              <label for="telefono">Phone</label>
-              <input type="tel" id="telefono" name="telefono" required><br><br>
+              <label for="Phone">Phone</label>
+              <input type="phone" id="phone" name="phone" required><br><br>
           
-              <label for="experiencia">Programming Experience</label>
-              <select id="experiencia" name="experiencia" required>
+              <label for="experience">Programming Experience</label>
+              <select id="experience" name="experience" required>
                 <option value="">Select</option>
-                <option value="ninguna">None</option>
-                <option value="principiante">Begginer</option>
-                <option value="intermedio">Intermediate</option>
-                <option value="avanzado">Expert</option>
+                <option value="None">None</option>
+                <option value="begginer">Begginer</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
               </select><br><br>
           
-              <label for="lenguaje">Preferred programming language</label>
-              <select id="lenguaje" name="lenguaje" required>
+              <label for="lenguage">Preferred programming language</label>
+              <select id="lenguage" name="lenguage" required>
                 <option value="">Select</option>
                 <option value="python">Python</option>
                 <option value="java">Java</option>
@@ -71,8 +77,8 @@
                 <option value="csharp">C#</option>
               </select><br><br>
           
-              <label for="comentarios">Aditional comment</label><br>
-              <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+              <label for="comments">Aditional comment</label><br>
+              <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
           
               <input type="submit" value="Send">
             </form>
